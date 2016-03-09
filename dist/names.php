@@ -1,5 +1,4 @@
 <?php include('templates/header.php'); 
-echo getUserIP();
 ?>
 
 
@@ -50,6 +49,4 @@ echo getUserIP();
     </div>
 </div> <!-- END footer form -->
 <?php include('templates/footer.php'); ?>
-<script type="text/javascript">
-    $("[name='my-checkbox']").bootstrapSwitch();
-</script>
+<script src="js/names.js"></script>
