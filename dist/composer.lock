@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a6f3f31d889043d46711b11b2e803851",
+    "content-hash": "3acc3faff2df5779b73cedf2a2c00b63",
+    "packages": [
+        {
+            "name": "snipe/banbuilder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snipe/banbuilder.git",
+                "reference": "2bcb345f5f7443a7daf6bf1fe507ce866eb6fa94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snipe/banbuilder/zipball/2bcb345f5f7443a7daf6bf1fe507ce866eb6fa94",
+                "reference": "2bcb345f5f7443a7daf6bf1fe507ce866eb6fa94",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Snipe\\BanBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "snipe",
+                    "email": "snipe@snipe.net",
+                    "role": "Creator & Developer"
+                }
+            ],
+            "description": "Library to easily handle profanity filtering in PHP projects.",
+            "homepage": "http://banbuilder.com",
+            "keywords": [
+                "filter",
+                "language",
+                "profanity",
+                "strings",
+                "swear"
+            ],
+            "time": "2015-10-26 18:20:03"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "snipe/banbuilder": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
