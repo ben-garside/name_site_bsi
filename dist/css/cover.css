@@ -19,6 +19,11 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.modal.custom .modal-content {
+    background-color:#222;
+    border-color: #D85A5A;
+    /*add what you want here*/
+}
 
 /*
  * Base structure
@@ -37,6 +42,7 @@ body {
 }
 
 .foot-form {
+  text-align: center;
   padding-top:20px;
 }
 
@@ -47,4 +53,8 @@ body {
   /* Set the fixed height of the footer here */
   height: 130px;
   background-color: #222;
+}
+
+#cloud {
+   width:100%;
 }

@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="../css/cover.css" rel="stylesheet">
     <link href="../css/bootstrap-switch.css" rel="stylesheet">
+    <link href="../css/jqcloud.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

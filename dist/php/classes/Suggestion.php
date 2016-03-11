@@ -39,12 +39,12 @@ class Suggestion {
 
 				$data = $this->_db->query($sql);				
 				if(!$data->error()){
-					return array('PROFANITY' => $censored);
+					return array('type' => 'PROFANITY', 'msg' => $censored);
 				} else {
-					return array('DATABASE ERROR' => $data->errorInfo());
+					return array('type' => 'DATABASE', 'msg' => $data->errorInfo());
 				}
 			} else {
-				return array('LOGIC ERROR' => 'User already submitted this');
+				return array('type' => 'LOGIC', 'msg' => 'User already submitted this');
 			}
 		} else {
 			// check if IP has submitted already
@@ -55,10 +55,10 @@ class Suggestion {
 				if(!$data->error()){
 					return True;
 				} else {
-					return array('DATABASE ERROR' => $data->errorInfo());
+					return array('type' => 'DATABASE', 'msg' => $data->errorInfo());
 				}
 			} else {
-				return array('LOGIC ERROR' => 'User already submitted this');
+				return array('type' => 'LOGIC', 'msg' => 'You have already submitted this idea!');
 			}
 		}
     }
