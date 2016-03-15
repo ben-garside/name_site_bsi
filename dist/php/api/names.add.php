@@ -9,6 +9,10 @@ $name = Input::get('name');
 $user = Input::get('user');
 $theme = Input::get('theme');
 
+if($user && $user <> '+1'){
+	Cookie::put('username', $user, 604800);
+} 
+
 if($name && is_numeric($theme)) {
 	$sug = new Suggestion();
 	$newSug = $sug->addSuggestion($name, $theme, $user);

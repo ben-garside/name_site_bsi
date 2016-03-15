@@ -2,13 +2,20 @@
  * Globals
  */
 
+.navbar-brand img {
+  height: 100%;
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #9d9d9d;
 }
 
+.newWord {
+  color: #5AD285;
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -19,6 +26,29 @@ a:hover {
   border: 1px solid #fff;
 }
 
+/* Custom warning button */
+.btn-warning,
+.btn-warning:active:focus,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #C5C5C5;
+  border: 1px solid #C5C5C5;
+}
+
+/* Custom danger button */
+.btn-danger,
+.btn-danger:active:focus,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #D85A5A;
+  border: 1px solid #D85A5A;
+}
 .modal.custom .modal-content {
     background-color:#222;
     border-color: #D85A5A;
@@ -57,4 +87,72 @@ body {
 
 #cloud {
    width:100%;
+}
+
+.lead-container {
+  text-align: center;
+}
+
+.gly-rotate-45 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.gly-spin {
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(30deg);
+  }
+  50% {
+    -moz-transform: rotate(40deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(40deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(30deg);
+  }
+  50% {
+    -o-transform: rotate(40deg);
+  }
+  100% {
+    -o-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
 }

@@ -11,6 +11,6 @@
     <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="js/jqcloud.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/jquery.countdown.js"></script>
   </body>
 </html>

@@ -15,6 +15,31 @@ class Suggestion {
 		return $data->results();
     }
 
+    public function getThemes(){
+    	$db = DB::getInstance();
+		$sql = "SELECT * FROM rooms.themes";
+		$data = $db->query($sql);					
+		return $data->results();
+    }
+
+    public function getSuggestionsCloud($qty, $theme){
+    	if($theme){
+    		$sql_theme = " AND rooms.themes.id = " . $theme;
+    	}
+    	$db = DB::getInstance();
+		$sql = "SELECT 
+				    name text, themeName theme, COUNT(name) weight
+				FROM
+				    rooms.suggestions
+				LEFT JOIN rooms.themes on rooms.themes.id = rooms.suggestions.theme
+				WHERE
+				    `clean` = 1 " . $sql_theme . "
+				GROUP BY name , theme
+				ORDER BY datetime DESC LIMIT 	" . $qty;
+		$data = $db->query($sql);					
+		return $data->results();
+    }
+
     private function checkIP($name, $theme, $userIp) {
     	$sql = "SELECT count(*) as count FROM rooms.suggestions where `name` = '".$name."' and `ip` = '".$userIp."' and `theme` = '".$theme."'";
     	$data = $this->_db->query($sql)->first()->count;
@@ -30,6 +55,7 @@ class Suggestion {
 
 		//check for profanities
 		$censor = new Snipe\BanBuilder\CensorWords;
+		$censor->setDictionary('en-uk');
 		$censored = $censor->censorString($name);
 
 		if(count($censored['matched']) > 0){

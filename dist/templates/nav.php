@@ -7,13 +7,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Rooms</a>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../logo.png">
+          </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>
+            <li><p class="navbar-text"><span style="font-weight: 100;" id="getting-started" class="label label-default"></span></p></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="names.php">Name a room</a></li>
-            <li><a href="#contact">Rules/Help</a></li>
+            <li><a href="help.php">Rules/Help</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
