@@ -1,61 +1,4 @@
 /*
- * Globals
- */
-
-.navbar-brand img {
-  height: 100%;
-}
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #9d9d9d;
-}
-
-.newWord {
-  color: #5AD285;
-}
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-/* Custom warning button */
-.btn-warning,
-.btn-warning:active:focus,
-.btn-warning:hover,
-.btn-warning:active,
-.btn-warning:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #C5C5C5;
-  border: 1px solid #C5C5C5;
-}
-
-/* Custom danger button */
-.btn-danger,
-.btn-danger:active:focus,
-.btn-danger:hover,
-.btn-danger:active,
-.btn-danger:focus {
-  color: #fff;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #D85A5A;
-  border: 1px solid #D85A5A;
-}
-.modal.custom .modal-content {
-    background-color:#222;
-    border-color: #D85A5A;
-    /*add what you want here*/
-}
-
-/*
  * Base structure
  */
 
@@ -71,6 +14,11 @@ body {
   margin-bottom: 130px;
 }
 
+/* Globals */
+.navbar-brand img {
+  height: 100%;
+}
+
 .foot-form {
   text-align: center;
   padding-top:20px;
@@ -80,19 +28,75 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 130px;
   background-color: #222;
-}
-
-#cloud {
-   width:100%;
 }
 
 .lead-container {
   text-align: center;
 }
 
+/* cloud */
+#cloud>span {
+  cursor: pointer;
+}
+
+.newWord {
+  color: #5AD285;
+}
+
+#cloud {
+  width:100%;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #9d9d9d;
+}
+
+
+/* Custom buttons */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-warning,
+.btn-warning:active:focus,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #C5C5C5;
+  border: 1px solid #C5C5C5;
+}
+
+.btn-danger,
+.btn-danger:active:focus,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #D85A5A;
+  border: 1px solid #D85A5A;
+}
+
+/* Modals */
+.modal.custom .modal-content {
+    background-color:#222;
+    border-color: #D85A5A;
+}
+
+
+/* gly */
 .gly-rotate-45 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(45deg);
